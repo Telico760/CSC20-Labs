@@ -32,10 +32,37 @@ public class Lab01{
 	public int getSize() {
 		return array.length;
 	}
+	
 	public int  getElement(int index) {
 		if (array.length == 0) {
 			return -1;
 		}
 		return array[index];
 	}
+	
+	public int getMax() {
+		if (array.length == 0) {
+			return -1;
+		}
+	}
+	
+	int max = array[0];
+	
+	for (int i = 1; 1 < array.length; i++) {
+		if (array[i] > max) {
+			max = array[i];
+		}
+	}
+	return max;
+	
+	public int getSum() {
+		int sum = 0;
+		
+		for (int i = 0; i < array.length; i++) {
+			sum = sum + array[i];
+		}
+		return sum;
+	}
+	
+	
 }
