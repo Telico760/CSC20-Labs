@@ -21,9 +21,21 @@ public class Lab01{
 	}
 	
 	// Fields below here...
+	private int[] array;
 	
 	// Constructor below here...
-		
-	// Methods below here...
+	public Lab01(int[] array) {
+		this.array = array;
+	}
 	
+	// Methods below here...
+	public int getSize() {
+		return array.length;
+	}
+	public int  getElement(int index) {
+		if (array.length == 0) {
+			return -1;
+		}
+		return array[index];
+	}
 }
