@@ -33,7 +33,7 @@ public class Lab01{
 		return array.length;
 	}
 	
-	public int  getElement(int index) {
+	public int getElement(int index) {
 		if (array.length == 0) {
 			return -1;
 		}
@@ -44,16 +44,16 @@ public class Lab01{
 		if (array.length == 0) {
 			return -1;
 		}
-	}
+		
+		int max = array[0];
 	
-	int max = array[0];
-	
-	for (int i = 1; 1 < array.length; i++) {
-		if (array[i] > max) {
-			max = array[i];
+		for (int i = 1; i < array.length; i++) {
+			if (array[i] > max) {
+				max = array[i];
+			}
 		}
+		return max;
 	}
-	return max;
 	
 	public int getSum() {
 		int sum = 0;
@@ -62,6 +62,22 @@ public class Lab01{
 			sum = sum + array[i];
 		}
 		return sum;
+	}
+	
+	public static int getStaticMin(int[] array) {
+		if (array.length == 0) {
+			return -1;
+		}
+	
+		int min =array[0];
+	
+		for (int i = 1; i < array.length; i++) {
+			if (array[i] < min) {
+				min = array[i];
+			}
+		}
+	
+		return min;
 	}
 	
 	
